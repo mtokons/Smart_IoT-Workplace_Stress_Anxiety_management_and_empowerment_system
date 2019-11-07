@@ -1,19 +1,7 @@
-%% ****************************************************
-%% **                                                **
-%% **              University of Malta               **
-%% **                                                **
-%% **    LaTeX Template for Thesis/Dissertation/FYP  **
-%% **                                                **
-%% **              Dr Jean-Paul Ebejer               **
-%% **            jean.p.ebejer@um.edu.mt             **
-%% **                                                **
-%% **     "Build something which will outlast you"   **
-%% **          (... amongst other things)            **
-%% **                                                **
-%% ****************************************************
+
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{um}[2018/05/01-2019/03/25 v1.2.1 University of Malta, Dissertation/FYP/Thesis Template]
+\ProvidesClass{um}[2018/05/01-2019/03/25 v1.2.1 University of Bremen, Dissertation/FYP/Thesis Template]
 
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
@@ -49,7 +37,7 @@
 \definecolor{UMRed}{rgb}{0.73,0.09,0.19}   % UM Logo Color
 
 % Setup choosen University of Malta crest/logo
-\def\logo{{\includegraphics[width=30mm]{umlogo_crest_red}}}
+\def\logo{{\includegraphics[width=30mm]{images/Bremen.png}}}
 
 % The year and term the thesis is submitted 
 \def\degreedate#1{\gdef\@degreedate{#1}}
@@ -158,7 +146,7 @@
 % The front page
 \renewcommand{\maketitle}
 {\begingroup
-\AlCentroPagina{umlogo_crest_gray}
+\AlCentroPagina{bremen_gray1}
 \parbox[b][0.95\textheight][t]{0.2\textwidth}{\raggedleft\logo} %% this 0.95 is important, otherwise page overflows in next page
 \hspace*{2ex}
 \textcolor{UMRed}{\rule{2pt}{0.95\textheight}}
@@ -176,7 +164,7 @@
     \@ifundefined{@cosupervisor}{\\[2ex]}{\\[2ex]\large Co-supervised by \@cosupervisor}\\[1cm]
     {\large \@department} \\[1ex]
     {\large \@faculty} \\[1ex]
-    {\large University of Malta} \\
+    {\large University of Bremen} \\
     \vfill
     {\bfseries \@degreedate}\\[\baselineskip]
 	\parbox[t]{0.80\linewidth}{\footnotesize\textit{A \@doctype\ submitted in partial fulfilment of the requirements for the degree of \@degree}.}    
@@ -248,7 +236,7 @@
 \newenvironment{originality}
 {\clearpage\thispagestyle{empty}
 \begin{figure}[h]
-	\includegraphics[width=2.5in]{umlogo_full_red}
+	\includegraphics[width=2.5in]{images/logo_ub.png}
 \end{figure}
 \vspace{3mm}
 {\noindent\Large\bfseries\sffamily\textcolor{UMRed}{Declaration by Postgraduate Students}}\\ %% FIXME this will have to change if not postgraduate ...
@@ -297,12 +285,12 @@ As a Master’s student, as per Regulation 58 of the General Regulations for Uni
 	\thispagestyle{empty}
 	
 	\begin{figure}[h]
-		\includegraphics[width=2.5in]{umlogo_full_red}
+		\includegraphics[width=2.5in]{images/logo_ub.png}
 	\end{figure}
 	
-	\noindent Copyright \textcopyright\the\year\ University of Malta\\ % Copyright notice
+	\noindent Copyright \textcopyright\the\year\ University of Bremen\\ % Copyright notice
 	
-	\noindent \textsc{www.um.edu.mt}\\ % URL
+	\noindent \textsc{www.uni-bremen.de}\\ % URL
 	
 	\noindent \textit{First edition, \today} % Printing/edition date
 	
